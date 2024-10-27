@@ -1,0 +1,47 @@
+<!-- FRONTEND- USUARIO ADMIN - BBDD MENSAJES USUARIOS -->
+
+<!-- EXTENDS TRAE NAVEGADOR/FOOTER PARA FRONTEND USUARIO ADMIN -->
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h3>Mensajes de usuarios</h3>
+
+<br>
+
+<div class="col-md-10">
+    <button onclick="window.location.href='/descargar_excel4'" class="btn btn-secondary">Descargar Tabla en Excel</button>
+</div>
+
+<br><br>
+
+<div class="col-md-8">
+<table class="table table-bordeded bg-white">
+<thead style="text-align:center;">
+<tr>
+<td>Nombre</td>
+<td>Email</td>
+<td>Mensaje</td>
+<td></td>
+</tr>
+</thead>
+<tbody>
+<!-- trae la tabla de la BBDD -->
+{% for mensaje in mensajes %}
+<tr>
+<td> {{mensaje.1}}</td> 
+<td> {{mensaje.2}}</td>
+<td> {{mensaje.3}}</td>
+<td> <a href="/eliminar9/{{mensaje.0}}" class="btn btn-danger btn-delete">Eliminar</a></td>
+
+
+
+
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<br><br>
+{% endblock %}

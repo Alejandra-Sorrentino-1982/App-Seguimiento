@@ -1,0 +1,64 @@
+<!-- FRONTEND- INICIO - TODOS LOS INTERNAUTAS -->
+
+<!-- EXTENDS TRAE NAVEGADOR/FOOTER PARA FRONTEND TODOS LOS INTERNAUTAS // VERSIÓN ESCRITORIO-->
+{% extends 'front-layout.html' %}
+
+{% block body %}
+
+
+<h3 class="titulotablacable">Monitoreo de señales de TV y Radios</h3>
+    
+       
+<br> <br>
+
+<div class= "img" style="text-align: center; margin-left: 50px; margin-right: 70px;">
+
+  <img src="https://imgur.com/HxtRrfZ.png" style="margin-right: 70px;" width="300"
+    height="300">
+    <img src="https://imgur.com/oyCZueM.png"  width="300"
+    height="230">
+</div>
+
+<br> <br> 
+<br> <br>
+
+<h3 class="titulotablacable">Elegí tu modo de reproducción favorito:</h3>
+
+<br> <br>
+
+
+<table>
+<tr>
+<th class="thlinks"><a href="http://localhost:3000/mix" style="text-decoration: none;">Multipantalla Mix</a></th>
+<th class="thlinks">
+  <a href="http://localhost:3000/youtube" style="text-decoration: none;">Youtube - 2 pantallas //</a>
+  <a href="http://localhost:3000/youtube6" style="text-decoration: none;">Youtube - Multipantalla</a></th>
+<th class="thlinks">
+  <a href="http://localhost:3000/m3u8" style="text-decoration: none;">M3u8 - 2 pantallas //</a>
+  <a href="http://localhost:3000/m3u86" style="text-decoration: none;">M3u8 - Multipantalla</a></th>
+</tr>
+
+<tr>
+<th class="thlinks1">Ver en vivo transmisiones de señales de TV y radios </th>
+<th class="thlinks1">Ver en vivo transmisiones de señales de TV -formato Youtube-</th>
+<th class="thlinks1">Ver en vivo transmisiones de señales de TV y Radios -formato M3u8-</th>
+</tr>
+
+
+
+<tr>
+<th class="thlinks"><a href="http://localhost:3000/myoutube" style="text-decoration: none;">Versión Mobile Youtube</a></th>
+<th class="thlinks"><a href="http://localhost:3000/mm3u8" style="text-decoration: none;" >Versión Mobile M3u8</a></th>
+<th class="thlinks"><a href="http://localhost:3000/radios" style="text-decoration: none;" >Radios</a></th>
+</tr>
+
+<tr>
+<th class="thlinks1">Ver en vivo transmisiones de señales de TV y radios </th>
+<th class="thlinks1">Ver en vivo transmisiones de señales de TV -formato Youtube-</th>
+<th class="thlinks1">Escuchar radios en vivo</th>
+</tr>
+
+</table>
+
+
+{% endblock %}
